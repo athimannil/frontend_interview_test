@@ -1,5 +1,12 @@
+// Colors
 $primary-color: #3c454b;
 $white: #fff;
 $black: #000;
 $gray-dark: lighten($black, 20%);
 $border-color: #dadada;
+
+// Media queray break point
+$largeScreen: 1100px;
+$smallScreen: 992px;
+$tablet: 768px;
+$mobile: 480px;

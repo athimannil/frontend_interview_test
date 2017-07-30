@@ -8,9 +8,14 @@
 .property {
 	display: flex;
 	flex-direction: column;
-	width: calc(100% / 3);
+	flex: 0 0 calc(100% / 3 - 1.55rem);
+	margin-right: 2.3rem;
+	margin-bottom: 1.5rem;
 	border: 1px solid $border-color;
 	border-radius: 2px;
+	&:nth-child(3n){
+		margin-right: 0;
+	}
 
 	&-image {
 		margin: 0;
