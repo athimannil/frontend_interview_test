@@ -1,4 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-ReactDOM.render(<p>Hell mate</p>, document.getElementById('myapp'));
+import App from './app/App';
+
+ReactDOM.render(<App />, document.getElementById('myapp'));
