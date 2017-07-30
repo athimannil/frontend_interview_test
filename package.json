@@ -7,7 +7,13 @@
   "author": "Tejas Kumar <tejas.kumar@mcmakler.de>",
   "license": "MIT",
   "scripts": {
-    "serve": "webpack-dev-server"
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
@@ -18,5 +24,9 @@
     "style-loader": "^0.18.2",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "node-sass-chokidar": "^0.0.3",
+    "npm-run-all": "^4.0.2"
   }
 }
