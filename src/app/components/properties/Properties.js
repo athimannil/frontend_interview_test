@@ -1,3 +1,5 @@
+import './Properties.css';
+
 import React from 'react';
 
 export class Properties extends React.Component {
@@ -5,7 +7,184 @@ export class Properties extends React.Component {
 		return (
 			<main>
 				<div className="container">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div className="list">
+						<article className="property">
+							<figure className="property-image">
+								<img src="http://via.placeholder.com/350x150" />
+								<figcaption>image title</figcaption>
+							</figure>
+							<div className="property-detail">
+								<h3>property title</h3>
+								<h6>Property address</h6>
+								<div className="">
+									<div>110.00¢</div>
+									<div>3 Zimmer</div>
+									<div>ab 35m²</div>
+								</div>
+							</div>
+						</article>
+
+						<article className="property">
+							<figure className="property-image">
+								<img src="http://via.placeholder.com/350x150" />
+								<figcaption>image title</figcaption>
+							</figure>
+							<div className="property-detail">
+								<h3>property title</h3>
+								<h6>Property address</h6>
+								<div className="">
+									<div>110.00¢</div>
+									<div>3 Zimmer</div>
+									<div>ab 35m²</div>
+								</div>
+							</div>
+						</article>
+
+						<article className="property">
+							<figure className="property-image">
+								<img src="http://via.placeholder.com/350x150" />
+								<figcaption>image title</figcaption>
+							</figure>
+							<div className="property-detail">
+								<h3>property title</h3>
+								<h6>Property address</h6>
+								<div className="">
+									<div>110.00¢</div>
+									<div>3 Zimmer</div>
+									<div>ab 35m²</div>
+								</div>
+							</div>
+						</article>
+
+						<article className="property">
+							<figure className="property-image">
+								<img src="http://via.placeholder.com/350x150" />
+								<figcaption>image title</figcaption>
+							</figure>
+							<div className="property-detail">
+								<h3>property title</h3>
+								<h6>Property address</h6>
+								<div className="">
+									<div>110.00¢</div>
+									<div>3 Zimmer</div>
+									<div>ab 35m²</div>
+								</div>
+							</div>
+						</article>
+
+						<article className="property">
+							<figure className="property-image">
+								<img src="http://via.placeholder.com/350x150" />
+								<figcaption>image title</figcaption>
+							</figure>
+							<div className="property-detail">
+								<h3>property title</h3>
+								<h6>Property address</h6>
+								<div className="">
+									<div>110.00¢</div>
+									<div>3 Zimmer</div>
+									<div>ab 35m²</div>
+								</div>
+							</div>
+						</article>
+
+						<article className="property">
+							<figure className="property-image">
+								<img src="http://via.placeholder.com/350x150" />
+								<figcaption>image title</figcaption>
+							</figure>
+							<div className="property-detail">
+								<h3>property title</h3>
+								<h6>Property address</h6>
+								<div className="">
+									<div>110.00¢</div>
+									<div>3 Zimmer</div>
+									<div>ab 35m²</div>
+								</div>
+							</div>
+						</article>
+
+						<article className="property">
+							<figure className="property-image">
+								<img src="http://via.placeholder.com/350x150" />
+								<figcaption>image title</figcaption>
+							</figure>
+							<div className="property-detail">
+								<h3>property title</h3>
+								<h6>Property address</h6>
+								<div className="">
+									<div>110.00¢</div>
+									<div>3 Zimmer</div>
+									<div>ab 35m²</div>
+								</div>
+							</div>
+						</article>
+
+						<article className="property">
+							<figure className="property-image">
+								<img src="http://via.placeholder.com/350x150" />
+								<figcaption>image title</figcaption>
+							</figure>
+							<div className="property-detail">
+								<h3>property title</h3>
+								<h6>Property address</h6>
+								<div className="">
+									<div>110.00¢</div>
+									<div>3 Zimmer</div>
+									<div>ab 35m²</div>
+								</div>
+							</div>
+						</article>
+
+						<article className="property">
+							<figure className="property-image">
+								<img src="http://via.placeholder.com/350x150" />
+								<figcaption>image title</figcaption>
+							</figure>
+							<div className="property-detail">
+								<h3>property title</h3>
+								<h6>Property address</h6>
+								<div className="">
+									<div>110.00¢</div>
+									<div>3 Zimmer</div>
+									<div>ab 35m²</div>
+								</div>
+							</div>
+						</article>
+
+						<article className="property">
+							<figure className="property-image">
+								<img src="http://via.placeholder.com/350x150" />
+								<figcaption>image title</figcaption>
+							</figure>
+							<div className="property-detail">
+								<h3>property title</h3>
+								<h6>Property address</h6>
+								<div className="">
+									<div>110.00¢</div>
+									<div>3 Zimmer</div>
+									<div>ab 35m²</div>
+								</div>
+							</div>
+						</article>
+
+						<article className="property">
+							<figure className="property-image">
+								<img src="http://via.placeholder.com/350x150" />
+								<figcaption>image title</figcaption>
+							</figure>
+							<div className="property-detail">
+								<h3>property title</h3>
+								<h6>Property address</h6>
+								<div className="">
+									<div>110.00¢</div>
+									<div>3 Zimmer</div>
+									<div>ab 35m²</div>
+								</div>
+							</div>
+						</article>
+
+					</div>
 				</div>
 			</main>
 		);

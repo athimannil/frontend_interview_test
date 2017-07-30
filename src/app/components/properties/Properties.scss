@@ -1,0 +1,14 @@
+.list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.property {
+	display: flex;
+	flex-direction: column;
+	width: calc(100% / 3);
+
+	&-image {
+		margin: 0;
+	}
+}
