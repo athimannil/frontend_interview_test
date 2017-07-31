@@ -1,15 +1,25 @@
 import './Properties.css';
 
 import React from 'react';
+import { PropertyTicket } from './propertyticket/PropertyTicket'
 
 export class Properties extends React.Component {
+	constructor (props) {
+		super(props);
+		this.state = {
+			propertyItems: ''
+		};
+	}
 
 	componentWillMount () {
-		console.log("commponent wil mount");
+		// requestProperties();
 		fetch('v1/advertisements')
 			.then((response) => response.json())
 			.then((responseJson) => {
-				return responseJson.movies;
+				// console.log(responseJson.data);
+				this.setState({
+					propertyItems: responseJson.data.slice(0, 10)
+				});
 			})
 			.catch((error) => {
 				console.error(error);
@@ -20,23 +30,10 @@ export class Properties extends React.Component {
 		return (
 			<main>
 				<div className="container">
-					<div className="list">
-						<article className="property">
-							<figure className="property-image">
-								<img src="http://via.placeholder.com/500x300" />
-								<figcaption className="property-image-title">mage title</figcaption>
-							</figure>
-							<div className="property-detail">
-								<h3 className="property-detail-title">property title</h3>
-								<h6 className="property-detail-address">Property address</h6>
-								<div className="property-detail-size">
-									<div className="property-detail-amount">110.00¢</div>
-									<div className="property-detail-room">3 Zimmer</div>
-									<div className="property-detail-space">ab 35m²</div>
-								</div>
-							</div>
-						</article>
-					</div>
+					{ this.state.propertyItems.length
+						? <PropertyTicket propertyitems={this.state.propertyItems}/>
+						: <p>Loading...</p>
+					}
 				</div>
 			</main>
 		);

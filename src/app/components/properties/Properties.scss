@@ -36,7 +36,7 @@
 		position: relative;
 
 		img {
-			max-width: 100%;
+			width: 100%;
 		}
 
 		&-title{
@@ -59,6 +59,11 @@
 		padding: 1rem 1.5rem;
 		@media (min-width: $tablet){
 			padding: 2rem 2.5rem;
+		}
+		&.no-address{
+			.property-detail-title{
+				flex: 1;
+			}
 		}
 
 		&-title{
